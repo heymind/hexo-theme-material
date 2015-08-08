@@ -1,0 +1,27 @@
+
+mixin article-post(post)
+    -
+        title=post.title
+        link=url_for(post.path)
+        datex=date(post.date)
+        cate=list_categories(post.categories,{"depth":1,"show_count":false})
+        tags=list_tags(post.tags,{"show_count":false})
+        text=post['content']
+        if(datex && cate){
+          _output= datex +" in "
+        }else{
+          if(date){
+            _output= datex
+          }else{
+            _output=""
+          }
+        }
+
+    .card
+        .card-content
+            a.card-title(href=link)= title
+            .markdown-body!= text
+        .card-action
+            .left #{_output} !{cate} 
+            .right asasas
+        

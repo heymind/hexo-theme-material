@@ -1,0 +1,230 @@
+.article-at-index .card-title{
+    font-size: 2rem !important;
+}
+.article-info .left-align{
+    display: inline-block;
+    float: left;
+}
+.article-info .right-align{
+    display: inline-block;
+    float: right;
+}
+.article-info-elems *{
+    display: inline-block;
+    margin: 0 .3rem;
+}
+.article-info {
+    padding: 1rem 0;
+    font-weight: 400;
+}
+#nav-mobile .dropdown-button{
+    text-align: center;
+    width: 10rem;
+}
+
+.footer-copyright .container *{
+    display: inline-block;
+    line-height: 2rem;
+    margin: 0 .3rem;
+    font-weight: 400;
+}
+ul.pagination{
+    display: inline-block;
+    margin: .8rem;
+}
+
+.article-at-index p{
+    font-weight: 300;
+}
+.article-at-index  h6{
+    font-size:1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-index  h5{
+    font-size:1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-index  h4{
+    font-size:1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-index  h3{
+    font-size:1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-index  h1{
+    font-size:1.5rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-index  h2{
+    font-size:1.2rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.article-at-post p{
+    font-weight: 300;
+}
+.article-at-post  h6{
+    font-size:1rem;
+    font-weight: 300;
+
+}
+.article-at-post  h5{
+    font-size:1rem;
+    font-weight: 300;
+
+}
+.article-at-post  h4{
+    font-size:1.2rem;
+    font-weight: 300;
+
+}
+.article-at-post  h3{
+    font-size:1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+
+}
+.article-at-post  h1{
+    font-size:3rem !important;
+}
+.article-at-post  h2{
+    font-size:2rem;
+    font-weight: 300;
+
+}
+
+.markdown-content blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+  overflow: hidden;
+}
+.markdown-content code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+figure.highlight {
+  background: #eee;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  padding: 7px 15px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 0 1px #fff;
+  line-height: 1.6;
+  overflow: auto;
+  position: relative;
+  font-size: 0.9em;
+}
+figure.highlight figcaption {
+  color: #999;
+  margin-bottom: 5px;
+  text-shadow: 0 0 1px #fff;
+}
+figure.highlight figcaption a {
+  position: absolute;
+  right: 15px;
+}
+figure.highlight pre {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+figure.highlight table {
+  margin-top: 0;
+  border-spacing: 0;
+}
+figure.highlight .gutter {
+  color: #999;
+  padding-right: 15px;
+  border-right: 1px solid #ddd;
+  text-align: right;
+}
+figure.highlight .code {
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+  color: #666;
+}
+figure.highlight .line {
+  height: 20px;
+}
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .doctype,
+pre .pi,
+pre .lisp .string,
+pre .javadoc {
+  color: #93a1a1;
+  font-style: italic;
+}
+pre .keyword,
+pre .winutils,
+pre .method,
+pre .addition,
+pre .css .tag,
+pre .request,
+pre .status,
+pre .nginx .title {
+  color: #859900;
+}
+pre .number,
+pre .command,
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula,
+pre .regexp,
+pre .hexcolor {
+  color: #2aa198;
+}
+pre .title,
+pre .localvars,
+pre .chunk,
+pre .decorator,
+pre .built_in,
+pre .identifier,
+pre .vhdl,
+pre .literal,
+pre .id {
+  color: #268bd2;
+}
+pre .attribute,
+pre .variable,
+pre .lisp .body,
+pre .smalltalk .number,
+pre .constant,
+pre .class .title,
+pre .parent,
+pre .haskell .type {
+  color: #b58900;
+}
+pre .preprocessor,
+pre .preprocessor .keyword,
+pre .shebang,
+pre .symbol,
+pre .symbol .string,
+pre .diff .change,
+pre .special,
+pre .attr_selector,
+pre .important,
+pre .subst,
+pre .cdata,
+pre .clojure .title {
+  color: #cb4b16;
+}
+pre .deletion {
+  color: #dc322f;
+}

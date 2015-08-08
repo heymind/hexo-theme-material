@@ -1,0 +1,74 @@
+//- .posts
+//-    .card.card-panel
+//-      .card-content
+//-        a.card-title.blue-grey-text(href='#') Card Title
+//-        .article-content
+//-          p
+//-            | I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+//-        .card-info.grey-text
+//-          .left-align
+//-            span YSW
+//-            |  write it in 
+//-            a(href='#')  Computer 
+//-            |   on 
+//-            span 1992-12-3
+//-          .right-align
+//-            a.(class='href="#"') #abbd
+//-            a(href='#') #sdsd
+//- mixin article-where(where)
+//- case where
+//-     when 'index'
+//-         .card-content.article-at-index
+//-     when 'post'
+//-         .card-content.article-at-post
+//-     block
+mixin article-post-post(post)
+    -
+        title=post.title
+        link=url_for(post.path)
+        date_=date(post.date)
+        cate=m_depth_cate(post.categories)
+        tags=m_list_tags(post.tags)
+        text = post['content']
+    article.card
+        .card-content.article-at-post
+            h1.card-title.blue-grey-text= title
+            .markdown-content!=text
+            .article-info.grey-text
+                .left-align.article-info-elems
+                    span= date_
+                    p in
+                    a(href=cate.link)=cate.name
+                .right-align.article-info-elems
+                    each tag in tags
+                        a(href=tag.link) ##{tag.name}
+mixin article-post-index(post)
+    -
+        title=post.title
+        link=url_for(post.path)
+        date_=date(post.date)
+        cate=m_depth_cate(post.categories)
+        tags=m_list_tags(post.tags)
+        text = post['content']
+            if (post['des']){
+                text = post['des']
+            }else{
+                text = post['content']
+            }
+    article.card
+        .card-content.article-at-index
+            a.card-title.blue-grey-text(href=link)= title
+            .markdown-content!=text
+            .article-info.grey-text
+                .left-align.article-info-elems
+                    span= date_
+                    p in
+                    a(href=cate.link)=cate.name
+                .right-align.article-info-elems
+                    each tag in tags
+                        a(href=tag.link) ##{tag.name}
+                    
+            
+
+
+             

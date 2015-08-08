@@ -1,0 +1,21 @@
+extends ./_layout/base
+include ./_layout/nav
+include ./_layout/article
+
+block body
+    +nav-pages
+    .container
+        .card
+            .card-content
+                span.card-title In Category #{page.category} :
+                ul#page-cate-list
+                    each cate in m_list_cates(page.base)
+                        li
+                            a(href=cate.link)= cate.name
+        each post in page.posts.data
+            case post.layout
+                when 'post'
+                    -console.log(post)
+                    +article-post(post,'index')
+    +footer
+    

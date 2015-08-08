@@ -1,0 +1,57 @@
+mixin nav-links
+    ul#nav-mobile.left
+        li
+            a(href='/') Index
+        //- li
+        //-     a(href='sass.html') Sass
+mixin nav-index
+    .navbar-fixed
+        nav.indigo.darken-4
+            .nav-wrapper
+                +nav-links
+                ul#nav-mobile.right.hide-on-med-and-down
+                    li
+                        a.dropdown-button(href='#',data-activates='tag-dropdown') Tags
+                    li
+                        a.dropdown-button(href='#',data-activates='cate-dropdown') Categories
+                    //- li
+                    //-     a.modal-trigger(href='#search') Search
+            ul#tag-dropdown.dropdown-content
+                each tag in m_list_tags()
+                    li
+                        a.indigo-text(href=tag.link)= tag.name  
+                            span.badge= tag.count
+            ul#cate-dropdown.dropdown-content
+                    each cate in m_list_cates()
+                        li
+                            a.indigo-text(href=cate.link)= cate.name  
+                                span.badge= cate.count                        
+                        
+            //-         <ul id='dropdown1' class='dropdown-content'>
+            //-   <li><a href="#!">one</a></li>
+            //-   <li><a href="#!">two</a></li>
+            //-   <li class="divider"></li>
+            //-   <li><a href="#!">three</a></li>
+            //- </ul>
+            //-         
+            //-         <div class="navbar-fixed">
+            //-         <nav>
+            //-              <a href="#" class="brand-logo right">Exodus</a>
+            //-             <div class="nav-wrapper">
+            //-                 <ul id="nav-mobile " class="left hide-on-med-and-down">
+            //-                   <li><a href="sass.html">Sass</a></li>
+            //-                   <li><a href="badges.html">Components</a></li>
+            //-                   <li><a href="collapsible.html">JavaScript</a></li>
+            //-             </ul>
+            //-   </div>
+              //- 
+            //-         </nav>
+            //-     </div>
+mixin nav-pages
+    .navbar-fixed
+        nav.indigo.darken-4
+            a.brand-logo.right(href="/")= config.title
+            .nav-wrapper
+                +nav-links
+            
+        

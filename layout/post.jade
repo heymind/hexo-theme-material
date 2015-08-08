@@ -1,0 +1,12 @@
+extends ./_layout/base
+include ./_layout/nav
+include ./_layout/article
+include ./_layout/footer
+
+    
+block body
+    +nav-pages
+    .container
+        +article-post-post(page)
+        
+    +footer

@@ -1,0 +1,14 @@
+.header-fixed {
+    position: fixed;
+    z-index: -1;
+}
+header.header{
+    margin-top: -.5rem;
+}
+.header-main{
+
+}
+
+body{
+    height: 1000px
+}

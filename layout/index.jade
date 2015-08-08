@@ -1,0 +1,21 @@
+extends ./_layout/base
+include ./_layout/nav
+include ./_layout/article
+include ./_layout/footer
+include ./_layout/paginator
+
+    
+block body
+    +nav-index
+    .container
+        .card-panel.indigo
+            h1.blog-title.white-text=config.title
+            span.blog-info.white-text=config.subtitle
+        each post in page.posts.data
+            case post.layout
+                when 'post'
+                    -console.log(post)
+                    +article-post-index(post,'index')
+        +paginator
+        
+    +footer
