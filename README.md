@@ -1,11 +1,11 @@
 # hexo-theme-material
-A theme of hexo using [materialize](https://github.com/Dogfalo/materialize)
+A theme of hexo using [materialize](https://github.com/Dogfalo/materialize).
 
 ## Install
 ### download
 ```
 npm install hexo-renderer-jade --save
-git clone <> /themes/material
+git clone git@github.com:heymind/hexo-theme-material.git themes/material
 ```
 ### copy scripts
 ```
