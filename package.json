@@ -1,11 +1,10 @@
 {
   "name": "hexo-theme-material",
   "version": "1.0.0",
-  "description": "",
+  "description": "A theme of hexo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copy": "mkdir ../../scripts&&cp ./scripts/*.js ../../scripts"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "heymind"
 }

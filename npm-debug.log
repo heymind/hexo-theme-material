@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/sw/packages/nodejs/node-v0.12.7-linux-x64/bin/node',
+1 verbose cli   '/home/sw/packages/nodejs/node-v0.12.7-linux-x64/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'copy' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose run-script [ 'precopy', 'copy', 'postcopy' ]
+5 info precopy hexo-theme-material@1.0.0
+6 info copy hexo-theme-material@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info hexo-theme-material@1.0.0 Failed to exec copy script
+9 verbose stack Error: hexo-theme-material@1.0.0 copy: `mkdir ../../scripts&&cp ./scripts/*.js ../../scripts`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/home/sw/packages/nodejs/node-v0.12.7-linux-x64/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (/home/sw/packages/nodejs/node-v0.12.7-linux-x64/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1015:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+10 verbose pkgid hexo-theme-material@1.0.0
+11 verbose cwd /home/sw/workspace/hexo-test/themes/material
+12 error Linux 4.1.3-201.fc22.x86_64
+13 error argv "/home/sw/packages/nodejs/node-v0.12.7-linux-x64/bin/node" "/home/sw/packages/nodejs/node-v0.12.7-linux-x64/bin/npm" "run" "copy"
+14 error node v0.12.7
+15 error npm  v2.11.3
+16 error code ELIFECYCLE
+17 error hexo-theme-material@1.0.0 copy: `mkdir ../../scripts&&cp ./scripts/*.js ../../scripts`
+17 error Exit status 1
+18 error Failed at the hexo-theme-material@1.0.0 copy script 'mkdir ../../scripts&&cp ./scripts/*.js ../../scripts'.
+18 error This is most likely a problem with the hexo-theme-material package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     mkdir ../../scripts&&cp ./scripts/*.js ../../scripts
+18 error You can get their info via:
+18 error     npm owner ls hexo-theme-material
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

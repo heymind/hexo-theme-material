@@ -1,17 +1,20 @@
 extends ./_layout/base
 include ./_layout/nav
 include ./_layout/article
+include ./_layout/footer
+include ./_layout/paginator
 
 block body
     +nav-pages
     .container
         .card
             .card-content
-                span.card-title In Tag #{page.tag} :
+                span.card-title.blue-grey-text In Tag #{page.tag} :
 
         each post in page.posts.data
             case post.layout
                 when 'post'
-                    -console.log(post)
-                    +article-post(post,'index')
+                    //- -console.log(post)
+                    +article-post-index(post)
+        +paginator
     +footer

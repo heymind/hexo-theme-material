@@ -14,7 +14,7 @@ block body
         each post in page.posts.data
             case post.layout
                 when 'post'
-                    -console.log(post)
+                    //- -console.log(post)
                     +article-post-index(post,'index')
         +paginator
         
